@@ -89,6 +89,7 @@
       <button class="filter-btn" id="filter-sweets" onclick="filterCategory('sweets',this)">&#127852; Sweets &amp; Laddus</button>
       <button class="filter-btn" id="filter-snacks" onclick="filterCategory('snacks',this)">&#129384; Snacks</button>
       <button class="filter-btn" id="filter-pickles" onclick="filterCategory('pickles',this)">&#129753; Pickles</button>
+      <button class="filter-btn" id="filter-pastes" onclick="filterCategory('pastes',this)">&#129476; Pastes &amp; Condiments</button>
     </div>
     <div class="products-grid" id="productsGrid">
 
@@ -275,6 +276,54 @@
         </div>
       </div>
 
+      <div class="product-card" data-category="pastes" id="card-ginger-garlic-paste">
+        <div class="card-img-wrap">
+          <img src="images/ginger_garlic_paste.jpg" alt="Ginger Garlic Paste" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <span class="badge-healthy">&#128154; Natural</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Ginger Garlic Paste','250gms',80,'images/ginger_garlic_paste.jpg')" id="quickadd-ginger-garlic">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Ginger Garlic Paste</h3>
+          <p class="card-desc">Fresh homemade ginger garlic paste with no preservatives &mdash; 100% natural, farm fresh and perfect for everyday cooking!</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;80</span><button class="add-btn" onclick="addToCart('Ginger Garlic Paste','250gms',80,'images/ginger_garlic_paste.jpg')" id="add-ginger-garlic-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="pastes" id="card-karevepaku-podi">
+        <div class="card-img-wrap">
+          <img src="images/karevepaku_podi.jpg" alt="Karevepaku Podi" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <span class="badge-healthy">&#128154; Healthy</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Karevepaku Podi','250gms',200,'images/karevepaku_podi.jpg')" id="quickadd-karevepaku">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Karevepaku Podi</h3>
+          <p class="card-desc">Aromatic curry leaf powder freshly ground with spices &mdash; a flavourful, iron-rich condiment perfect with hot rice and ghee!</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;200</span><button class="add-btn" onclick="addToCart('Karevepaku Podi','250gms',200,'images/karevepaku_podi.jpg')" id="add-karevepaku-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="pastes" id="card-munagaaku-kaaram">
+        <div class="card-img-wrap">
+          <img src="images/munagaaku_kaaram.jpg" alt="Munagaaku Kaaram" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <span class="badge-spicy">&#127798; Spicy</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Munagaaku Kaaram','250gms',200,'images/munagaaku_kaaram.jpg')" id="quickadd-munagaaku">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Munagaaku Kaaram</h3>
+          <p class="card-desc">Nutritious moringa leaf spice powder ground with red chillies and garlic &mdash; a protein-rich, flavourful side for rice and roti!</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;200</span><button class="add-btn" onclick="addToCart('Munagaaku Kaaram','250gms',200,'images/munagaaku_kaaram.jpg')" id="add-munagaaku-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -293,7 +342,7 @@
         </ul>
       </div>
       <div class="about-stats">
-        <div class="stat-card"><span class="stat-num">12+</span><span class="stat-label">Homemade Products</span></div>
+        <div class="stat-card"><span class="stat-num">15+</span><span class="stat-label">Homemade Products</span></div>
         <div class="stat-card"><span class="stat-num">100%</span><span class="stat-label">Natural Ingredients</span></div>
         <div class="stat-card"><span class="stat-num">0</span><span class="stat-label">Preservatives</span></div>
         <div class="stat-card"><span class="stat-num">&#10084;</span><span class="stat-label">Made with Love</span></div>

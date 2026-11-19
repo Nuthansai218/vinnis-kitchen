@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinni's - Homemade Snacks &amp; Sweets | Traditional Taste, Pure Ingredients</title>
+  <meta name="description" content="Order fresh, homemade traditional snacks and sweets from Vinni's. Pure ingredients, no preservatives. Call or WhatsApp 9985555713." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header" id="mainHeader">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">&#127968;</span>
+        <div>
+          <span class="logo-name">Vinni's</span>
+          <span class="logo-tagline">Homemade Snacks &amp; Sweets</span>
+        </div>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu" class="nav-link" id="nav-menu">Menu</a>
+        <a href="#about" class="nav-link" id="nav-about">About</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+        <a href="tel:9985555713" class="nav-call" id="nav-call">&#128222; Call Us</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" onclick="toggleCart()">&#128722; Cart <span class="cart-count" id="cartCount">0</span></button>
+      <button class="hamburger" id="hamburger" onclick="toggleNav()">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-badge">&#127807; No Preservatives &middot; Only Natural Ingredients</div>
+      <h1 class="hero-title">Taste the <span class="highlight">Tradition</span><br/>Feel the Homemade Goodness</h1>
+      <p class="hero-subtitle">Freshly prepared with love, pure ingredients and traditional recipes &mdash; straight from our home to yours.</p>
+      <div class="hero-pills">
+        <span class="pill">&#127855; Traditional Taste</span>
+        <span class="pill">&#127806; Pure Ingredients</span>
+        <span class="pill">&#10084; Homemade with Love</span>
+        <span class="pill">&#9989; Healthy &amp; Tasty</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#menu" class="btn-primary" id="hero-browse">Browse Menu</a>
+        <a href="https://wa.me/919985555713?text=Hi%20Vinni's!%20I'd%20like%20to%20order." class="btn-whatsapp" id="hero-whatsapp" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Order on WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-image-stack">
+        <div class="hero-img-wrap main-img">
+          <img src="images/dry_fruits_laddu.jpg" alt="Dry Fruits Laddu" class="hero-img" />
+          <span class="img-label">&#127852; Dry Fruits Laddu</span>
+        </div>
+        <div class="hero-img-wrap side-img1">
+          <img src="images/boondhi_laddu.jpg?v=2" alt="Boondhi Laddu" class="hero-img" />
+          <span class="img-label">&#127852; Boondhi Laddu</span>
+        </div>
+        <div class="hero-img-wrap side-img2">
+          <img src="images/mutton_pickle.jpg" alt="Mutton Pickle" class="hero-img" />
+          <span class="img-label">&#129385; Mutton Pickle</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-strip">
+    <div class="trust-inner">
+      <div class="trust-item"><span class="trust-icon">&#127807;</span><div><strong>Freshly Prepared</strong><span>Made to order</span></div></div>
+      <div class="trust-item"><span class="trust-icon">&#127968;</span><div><strong>Home Made with Care</strong><span>Traditional recipes</span></div></div>
+      <div class="trust-item"><span class="trust-icon">&#9989;</span><div><strong>No Preservatives</strong><span>Only natural ingredients</span></div></div>
+      <div class="trust-item"><span class="trust-icon">&#128640;</span><div><strong>Quick Delivery</strong><span>Same/next day dispatch</span></div></div>
+    </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <div class="section-header">
+      <h2>Our Menu</h2>
+      <p>Crafted with love, made fresh &mdash; just like grandma used to make</p>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" id="filter-all" onclick="filterCategory('all',this)">&#127869; All Items</button>
+      <button class="filter-btn" id="filter-sweets" onclick="filterCategory('sweets',this)">&#127852; Sweets &amp; Laddus</button>
+      <button class="filter-btn" id="filter-snacks" onclick="filterCategory('snacks',this)">&#129384; Snacks</button>
+      <button class="filter-btn" id="filter-pickles" onclick="filterCategory('pickles',this)">&#129753; Pickles</button>
+    </div>
+    <div class="products-grid" id="productsGrid">
+
+      <div class="product-card" data-category="sweets" id="card-dry-fruits-laddu">
+        <div class="card-img-wrap">
+          <img src="images/dry_fruits_laddu.jpg" alt="Dry Fruits Laddu" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Dry Fruits Laddu','250gms',325,'images/dry_fruits_laddu.jpg')" id="quickadd-dry-fruits">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Dry Fruits Laddu</h3>
+          <p class="card-desc">Rich laddus loaded with almonds, cashews, pistachios and raisins. A festive favourite!</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;325</span><button class="add-btn" onclick="addToCart('Dry Fruits Laddu','250gms',325,'images/dry_fruits_laddu.jpg')" id="add-dry-fruits-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sweets" id="card-nuvvula-laddu">
+        <div class="card-img-wrap">
+          <img src="images/nuvvula_laddu.jpg?v=2" alt="Nuvvula Laddu" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Nuvvula Laddu','250gms',175,'images/nuvvula_laddu.jpg?v=2')" id="quickadd-nuvvula">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Nuvvula Laddu</h3>
+          <p class="card-desc">Sesame seed laddus packed with calcium and wholesome goodness. Crunchy and sweet!</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;175</span><button class="add-btn" onclick="addToCart('Nuvvula Laddu','250gms',175,'images/nuvvula_laddu.jpg?v=2')" id="add-nuvvula-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sweets" id="card-boondhi-laddu">
+        <div class="card-img-wrap">
+          <img src="images/boondhi_laddu.jpg?v=2" alt="Boondhi Laddu" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Boondhi Laddu','250gms',150,'images/boondhi_laddu.jpg?v=2')" id="quickadd-boondhi">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Boondhi Laddu</h3>
+          <p class="card-desc">Classic festival laddu made from tiny fried gram flour pearls soaked in sugar syrup.</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;150</span><button class="add-btn" onclick="addToCart('Boondhi Laddu','250gms',150,'images/boondhi_laddu.jpg?v=2')" id="add-boondhi-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sweets" id="card-flaxseeds-laddu">
+        <div class="card-img-wrap">
+          <img src="images/flaxseeds_laddu.jpg" alt="Flaxseeds Laddu" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <span class="badge-healthy">&#128154; Healthy</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Flaxseeds Laddu','250gms',225,'images/flaxseeds_laddu.jpg')" id="quickadd-flaxseeds">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Flaxseeds Laddu</h3>
+          <p class="card-desc">Nutrient-dense flaxseed laddus with jaggery &mdash; a power-packed healthy treat.</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;225</span><button class="add-btn" onclick="addToCart('Flaxseeds Laddu','250gms',225,'images/flaxseeds_laddu.jpg')" id="add-flaxseeds-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sweets" id="card-bellam-gavvalu">
+        <div class="card-img-wrap">
+          <img src="images/bellam_gavvalu.jpg?v=2" alt="Bellam Gavvalu" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Bellam Gavvalu','250gms',125,'images/bellam_gavvalu.jpg?v=2')" id="quickadd-bellam">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Bellam Gavvalu</h3>
+          <p class="card-desc">Traditional jaggery-coated shell-shaped sweets. Sweet, crunchy and utterly nostalgic.</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;125</span><button class="add-btn" onclick="addToCart('Bellam Gavvalu','250gms',125,'images/bellam_gavvalu.jpg?v=2')" id="add-bellam-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sweets" id="card-kajakayalu">
+        <div class="card-img-wrap">
+          <img src="images/kajakayalu.jpg" alt="Kajakayalu" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Kajakayalu','250gms',160,'images/kajakayalu.jpg')" id="quickadd-kajakayalu">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Kajakayalu</h3>
+          <p class="card-desc">Crispy deep-fried sweet pastry pockets &mdash; a beloved traditional Andhra festive sweet.</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;160</span><button class="add-btn" onclick="addToCart('Kajakayalu','250gms',160,'images/kajakayalu.jpg')" id="add-kajakayalu-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="snacks" id="card-karam-gavvalu">
+        <div class="card-img-wrap">
+          <img src="images/karam_gavvalu.jpg" alt="Karam Gavvalu" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <span class="badge-spicy">&#127798; Spicy</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Karam Gavvalu','250gms',125,'images/karam_gavvalu.jpg')" id="quickadd-karam">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Karam Gavvalu</h3>
+          <p class="card-desc">Fiery, crispy spiced shell-shaped savory snacks. Perfect with evening tea!</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;125</span><button class="add-btn" onclick="addToCart('Karam Gavvalu','250gms',125,'images/karam_gavvalu.jpg')" id="add-karam-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="snacks" id="card-minapa-chakralu">
+        <div class="card-img-wrap">
+          <img src="images/minapa_chakralu.jpg?v=4" alt="Minapa Chakralu" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Minapa Chakralu','250gms',150,'images/minapa_chakralu.jpg?v=4')" id="quickadd-minapa">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Minapa Chakralu</h3>
+          <p class="card-desc">Classic urad dal spiral murukku &mdash; crispy, crunchy and absolutely addictive.</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;150</span><button class="add-btn" onclick="addToCart('Minapa Chakralu','250gms',150,'images/minapa_chakralu.jpg?v=4')" id="add-minapa-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="snacks" id="card-janthikalu">
+        <div class="card-img-wrap">
+          <img src="images/janthikalu.jpg?v=3" alt="Janthikalu" class="card-img" loading="lazy" />
+          <span class="veg-badge">&#128994; Veg</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Janthikalu','250gms',125,'images/janthikalu.jpg?v=3')" id="quickadd-janthikalu">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Janthikalu</h3>
+          <p class="card-desc">Rice flour noodle strings pressed into crispy golden swirls. Light and irresistible!</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;125</span><button class="add-btn" onclick="addToCart('Janthikalu','250gms',125,'images/janthikalu.jpg?v=3')" id="add-janthikalu-250">Add</button></div>
+            <div class="variant-row"><span class="variant-wt">1 kg</span><span class="variant-price">&#8377;500</span><button class="add-btn" onclick="addToCart('Janthikalu','1kg',500,'images/janthikalu.jpg?v=3')" id="add-janthikalu-1kg">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="pickles" id="card-mutton-pickle">
+        <div class="card-img-wrap">
+          <img src="images/mutton_pickle.jpg" alt="Mutton Boneless Pickle" class="card-img" loading="lazy" />
+          <span class="nonveg-badge">&#128308; Non-Veg</span>
+                    <div class="card-overlay"><button class="quick-add" onclick="addToCart('Mutton Boneless Pickle','250gms',600,'images/mutton_pickle.jpg')" id="quickadd-mutton">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Mutton Boneless Pickle</h3>
+          <p class="card-desc">Tender boneless mutton marinated in aromatic spices and oil. Deeply rich and flavorful.</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;600</span><button class="add-btn" onclick="addToCart('Mutton Boneless Pickle','250gms',600,'images/mutton_pickle.jpg')" id="add-mutton-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="pickles" id="card-chicken-pickle-bone">
+        <div class="card-img-wrap">
+          <img src="images/chicken_pickle_bone.jpg" alt="Chicken Pickle With Bone" class="card-img" loading="lazy" />
+          <span class="nonveg-badge">&#128308; Non-Veg</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Chicken Pickle With Bone','250gms',300,'images/chicken_pickle_bone.jpg')" id="quickadd-chicken-bone">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Chicken Pickle With Bone</h3>
+          <p class="card-desc">Juicy chicken with bone pieces slow-cooked with bold spices in tangy oil marinade.</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;300</span><button class="add-btn" onclick="addToCart('Chicken Pickle With Bone','250gms',300,'images/chicken_pickle_bone.jpg')" id="add-chicken-bone-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="pickles" id="card-boneless-chicken-pickle">
+        <div class="card-img-wrap">
+          <img src="images/boneless_chicken_pickle.jpg" alt="Boneless Chicken Pickle" class="card-img" loading="lazy" />
+          <span class="nonveg-badge">&#128308; Non-Veg</span>
+          <div class="card-overlay"><button class="quick-add" onclick="addToCart('Boneless Chicken Pickle','250gms',375,'images/boneless_chicken_pickle.jpg')" id="quickadd-boneless-chicken">+ Add to Cart</button></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-name">Boneless Chicken Pickle</h3>
+          <p class="card-desc">Succulent boneless chicken marinated in fiery spice blend &mdash; great with rice or roti!</p>
+          <div class="card-variants">
+            <div class="variant-row"><span class="variant-wt">250 gms</span><span class="variant-price">&#8377;375</span><button class="add-btn" onclick="addToCart('Boneless Chicken Pickle','250gms',375,'images/boneless_chicken_pickle.jpg')" id="add-boneless-chicken-250">Add</button></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <span class="about-badge">Our Story</span>
+        <h2>Good Food Brings <span class="highlight">Happiness</span></h2>
+        <p>At Vinni's, every snack is crafted with the same love and care that goes into cooking at home. We believe in keeping it simple &mdash; real ingredients, traditional recipes, no shortcuts.</p>
+        <p>From the crunch of our chakralu to the richness of our dry fruits laddu, every bite carries the warmth of a home kitchen.</p>
+        <ul class="about-features">
+          <li>&#127807; Zero preservatives &mdash; always fresh</li>
+          <li>&#127968; Made in a clean home kitchen</li>
+          <li>&#127855; Pure jaggery, cold-pressed oils</li>
+          <li>&#10084; Made with love for your family</li>
+        </ul>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card"><span class="stat-num">12+</span><span class="stat-label">Homemade Products</span></div>
+        <div class="stat-card"><span class="stat-num">100%</span><span class="stat-label">Natural Ingredients</span></div>
+        <div class="stat-card"><span class="stat-num">0</span><span class="stat-label">Preservatives</span></div>
+        <div class="stat-card"><span class="stat-num">&#10084;</span><span class="stat-label">Made with Love</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="section-header light">
+      <h2>Order Now</h2>
+      <p>Reach us on WhatsApp or give us a call &mdash; we are always happy to help!</p>
+    </div>
+    <div class="contact-cards">
+      <a href="https://wa.me/919985555713?text=Hi%20Vinni's!%20I%20want%20to%20place%20an%20order." target="_blank" class="contact-card whatsapp-card" id="contact-whatsapp">
+        <div class="contact-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </div>
+        <h3>WhatsApp Order</h3>
+        <p>+91 99855 55713</p>
+        <span class="contact-action">Chat Now &rarr;</span>
+      </a>
+      <a href="tel:9985555713" class="contact-card phone-card" id="contact-phone">
+        <div class="contact-icon">&#128222;</div>
+        <h3>Call to Order</h3>
+        <p>9985555713</p>
+        <span class="contact-action">Call Now &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-name">Vinni's</span>
+        <p>Homemade Snacks and Sweets<br/>Taste the Tradition &middot; Feel the Homemade Goodness</p>
+      </div>
+      <div class="footer-links">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:9985555713">&#128222; 9985555713</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2024 Vinni's Homemade Snacks and Sweets &middot; Made with &#10084; &middot; Traditional Taste &middot; Pure Ingredients</p>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>&#128722; Your Cart</h3>
+      <button class="cart-close" onclick="toggleCart()" id="cartClose">&#x2715;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty" id="cartEmpty"><span>&#128722;</span><p>Your cart is empty</p><small>Add some delicious items!</small></div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total"><span>Total:</span><span class="total-amount" id="cartTotal">&#8377;0</span></div>
+      <button class="btn-whatsapp full-width" id="checkoutWhatsapp" onclick="checkoutWhatsApp()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Order via WhatsApp
+      </button>
+      <a href="tel:9985555713" class="btn-phone full-width" id="checkoutPhone">&#128222; Call to Order</a>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
